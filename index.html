@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>IronCore Fitness</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                IRONCORE
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#programs">Programs</a></li>
+                <li><a href="#membership">Membership</a></li>
+                <li><a href="#trainers">Trainers</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+           <li><a href="#contact">Contact</a></li>
+
+        </nav>
+    </header>
+
+
+    <main>
+
+        <section id="home" class="hero">
+
+            <div class="hero-content">
+
+                <p class="subtitle">
+                    WELCOME TO IRONCORE FITNESS
+                </p>
+
+                <h1>
+                    BUILD YOUR
+                    <span>STRONGEST</span>
+                    SELF
+                </h1>
+
+                <p>
+                    Train harder. Get stronger. Become the best version
+                    of yourself with professional trainers and modern
+                    fitness facilities.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#membership" class="primary-btn">
+                        View Memberships
+                    </a>
+
+                     <a href="#contact" class="secondary-btn">Membership Enquiry</a>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section id="about" class="about">
+
+            <div class="section-title">
+                <p>WHO WE ARE</p>
+                <h2>MORE THAN JUST A GYM</h2>
+            </div>
+
+            <div class="about-content">
+
+                <div>
+                    <h3>Train With Purpose</h3>
+
+                    <p>
+                        IronCore Fitness is a modern fitness center
+                        designed for people who are serious about
+                        improving their health, strength and confidence.
+                    </p>
+
+                    <p>
+                        Our facility provides professional trainers,
+                        modern equipment and personalized programs
+                        for beginners and experienced athletes.
+                    </p>
+                </div>
+
+                <div class="stats">
+
+                    <div>
+                        <h3>5+</h3>
+                        <p>Years Experience</p>
+                    </div>
+
+                    <div>
+                        <h3>1000+</h3>
+                        <p>Members</p>
+                    </div>
+
+                    <div>
+                        <h3>15+</h3>
+                        <p>Professional Trainers</p>
+                    </div>
+
+                    <div>
+                        <h3>50+</h3>
+                        <p>Weekly Classes</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+       <section id="programs" class="programs">
+
+    <div class="section-title">
+        <p>WHAT WE OFFER</p>
+        <h2>OUR PROGRAMS</h2>
+    </div>
+
+    <div class="program-grid">
+
+        <div class="program-card">
+
+            <div class="program-icon">
+                🏋️
+            </div>
+
+            <h3>Strength Training</h3>
+
+            <p>
+                Build muscle, increase strength and improve your
+                overall performance with structured training programs.
+            </p>
+
+            <a href="#contact" class="program-link">
+                Learn More →
+            </a>
+
+        </div>
+
+
+        <div class="program-card">
+
+            <div class="program-icon">
+                🔥
+            </div>
+
+            <h3>HIIT & Fat Loss</h3>
+
+            <p>
+                High-intensity workouts designed to improve fitness,
+                burn calories and build endurance.
+            </p>
+
+            <a href="#contact" class="program-link">
+                Learn More →
+            </a>
+
+        </div>
+
+
+        <div class="program-card">
+
+            <div class="program-icon">
+                🧘
+            </div>
+
+            <h3>Yoga & Mobility</h3>
+
+            <p>
+                Improve flexibility, balance and mobility while
+                reducing stress and improving recovery.
+            </p>
+
+            <a href="#contact" class="program-link">
+                Learn More →
+            </a>
+
+        </div>
+
+
+        <div class="program-card">
+
+            <div class="program-icon">
+                👤
+            </div>
+
+            <h3>Personal Training</h3>
+
+            <p>
+                Get personalized coaching and a workout plan designed
+                around your individual fitness goals.
+            </p>
+
+            <a href="#contact" class="program-link">
+                Learn More →
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="membership" class="membership">
+
+    <div class="section-title">
+        <p>CHOOSE YOUR PLAN</p>
+        <h2>MEMBERSHIP</h2>
+        <span class="section-description">
+            Flexible plans designed for every fitness goal.
+        </span>
+    </div>
+
+    <!-- Billing Toggle -->
+
+    <div class="billing-toggle">
+
+        <button
+            id="monthlyBtn"
+            class="billing-btn active"
+            onclick="setBilling('monthly')">
+            Monthly
+        </button>
+
+        <button
+            id="yearlyBtn"
+            class="billing-btn"
+            onclick="setBilling('yearly')">
+            Yearly
+            <span class="save-badge">SAVE 20%</span>
+        </button>
+
+    </div>
+
+
+    <div class="membership-grid">
+
+        <!-- BASIC -->
+
+        <div class="price-card">
+
+            <h3>Basic</h3>
+
+            <p class="plan-description">
+                Perfect for beginners getting started.
+            </p>
+
+            <div class="price">
+                ₹<span id="basicPrice">999</span>
+                <small>/month</small>
+            </div>
+
+            <ul class="plan-features">
+
+                <li>✓ Gym Access</li>
+                <li>✓ Locker Facility</li>
+                <li>✓ Basic Fitness Assessment</li>
+                <li>✓ Cardio Equipment</li>
+
+            </ul>
+
+            <button
+                class="plan-btn"
+                onclick="selectPlan('Basic')">
+                Choose Basic
+            </button>
+
+        </div>
+
+
+        <!-- PREMIUM -->
+
+        <div class="price-card featured">
+
+            <div class="popular">
+                MOST POPULAR
+            </div>
+
+            <h3>Premium</h3>
+
+            <p class="plan-description">
+                Great for members who want more guidance.
+            </p>
+
+            <div class="price">
+                ₹<span id="premiumPrice">1,499</span>
+                <small>/month</small>
+            </div>
+
+            <ul class="plan-features">
+
+                <li>✓ Unlimited Gym Access</li>
+                <li>✓ Fitness Assessment</li>
+                <li>✓ Group Classes</li>
+                <li>✓ Diet Guidance</li>
+                <li>✓ Progress Tracking</li>
+
+            </ul>
+
+            <button
+                class="plan-btn"
+                onclick="selectPlan('Premium')">
+                Choose Premium
+            </button>
+
+        </div>
+
+
+        <!-- ELITE -->
+
+        <div class="price-card">
+
+            <h3>Elite</h3>
+
+            <p class="plan-description">
+                Personalized training for serious goals.
+            </p>
+
+            <div class="price">
+                ₹<span id="elitePrice">2,499</span>
+                <small>/month</small>
+            </div>
+
+            <ul class="plan-features">
+
+                <li>✓ Everything in Premium</li>
+                <li>✓ Personal Trainer</li>
+                <li>✓ Customized Workout Plan</li>
+                <li>✓ Nutrition Plan</li>
+                <li>✓ Monthly Progress Review</li>
+
+            </ul>
+
+            <button
+                class="plan-btn"
+                onclick="selectPlan('Elite')">
+                Choose Elite
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="gallery" class="gallery">
+
+    <div class="section-title">
+        <p>OUR FACILITY</p>
+        <h2>GYM GALLERY</h2>
+        <span class="section-description">
+            A look inside the IronCore Fitness experience.
+        </span>
+    </div>
+
+    <div class="gallery-grid">
+
+        <div class="gallery-item large">
+            <img
+                src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1200&q=80"
+                alt="Gym equipment"
+            >
+            <div class="gallery-overlay">
+                <h3>Strength Area</h3>
+                <p>Premium equipment for strength training</p>
+            </div>
+        </div>
+
+        <div class="gallery-item">
+            <img
+                src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?auto=format&fit=crop&w=900&q=80"
+                alt="Modern gym"
+            >
+            <div class="gallery-overlay">
+                <h3>Training Floor</h3>
+                <p>Spacious workout area</p>
+            </div>
+        </div>
+
+        <div class="gallery-item">
+            <img
+                src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=900&q=80"
+                alt="Personal training"
+            >
+            <div class="gallery-overlay">
+                <h3>Personal Training</h3>
+                <p>One-to-one coaching</p>
+            </div>
+        </div>
+
+        <div class="gallery-item">
+            <img
+                src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=900&q=80"
+                alt="Weight training"
+            >
+            <div class="gallery-overlay">
+                <h3>Free Weights</h3>
+                <p>Train with quality equipment</p>
+            </div>
+        </div>
+
+        <div class="gallery-item large">
+            <img
+                src="https://images.unsplash.com/photo-1599058917212-d750089bc07e?auto=format&fit=crop&w=1200&q=80"
+                alt="Fitness workout"
+            >
+            <div class="gallery-overlay">
+                <h3>Fitness Zone</h3>
+                <p>Built for serious training</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="testimonials" class="testimonials">
+
+    <div class="section-title">
+        <p>MEMBER STORIES</p>
+        <h2>WHAT OUR MEMBERS SAY</h2>
+        <span class="section-description">
+            Real results. Real people. Real commitment.
+        </span>
+    </div>
+
+    <div class="testimonial-grid">
+
+        <div class="testimonial-card">
+
+            <div class="stars">★★★★★</div>
+
+            <p>
+                "The trainers are supportive and the equipment is
+                excellent. I've become much more consistent with my
+                workouts since joining."
+            </p>
+
+            <div class="member">
+                <div class="member-avatar">R</div>
+
+                <div>
+                    <h3>Rahul Sharma</h3>
+                    <span>Member for 1 year</span>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="testimonial-card">
+
+            <div class="stars">★★★★★</div>
+
+            <p>
+                "I joined for weight loss and the personalized
+                training made a huge difference. The atmosphere is
+                motivating and friendly."
+            </p>
+
+            <div class="member">
+                <div class="member-avatar">P</div>
+
+                <div>
+                    <h3>Priya Mehta</h3>
+                    <span>Member for 8 months</span>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="testimonial-card">
+
+            <div class="stars">★★★★★</div>
+
+            <p>
+                "Great gym with modern equipment and knowledgeable
+                trainers. The Premium membership has been worth it
+                for me."
+            </p>
+
+            <div class="member">
+                <div class="member-avatar">A</div>
+
+                <div>
+                    <h3>Arjun Patel</h3>
+                    <span>Member for 2 years</span>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+           <section id="trainers" class="trainers">
+
+    <div class="section-title">
+        <p>MEET THE TEAM</p>
+        <h2>OUR TRAINERS</h2>
+    </div>
+
+    <div class="trainer-grid">
+
+        <div class="trainer-card">
+
+            <div class="trainer-image">
+                <img
+                    src="https://static.wixstatic.com/media/a78952_ac0bf6fd308c4e44b1fc952c68d45539~mv2.jpg/v1/fill/w_452,h_452,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/a78952_ac0bf6fd308c4e44b1fc952c68d45539~mv2.jpg"
+                    alt="Alex Morgan - Strength Trainer"
+                >
+            </div>
+
+            <div class="trainer-info">
+                <h3>Alex Morgan</h3>
+                <p>Strength & Conditioning</p>
+                <span>8+ Years Experience</span>
+            </div>
+
+        </div>
+
+
+        <div class="trainer-card">
+
+            <div class="trainer-image">
+                <img
+                    src="https://www.thrivefitdxb.ae/assets/images/coach/farah.webp"
+                    alt="Sarah Williams - Fitness Trainer"
+                >
+            </div>
+
+            <div class="trainer-info">
+                <h3>Sarah Williams</h3>
+                <p>Fitness & Nutrition</p>
+                <span>6+ Years Experience</span>
+            </div>
+
+        </div>
+
+
+        <div class="trainer-card">
+
+            <div class="trainer-image">
+                <img
+                    src="https://saranshaharwar-code.github.io/GOLD-S-GYM/images/trainer_1.png"
+                    alt="David Johnson - Personal Trainer"
+                >
+            </div>
+
+            <div class="trainer-info">
+                <h3>David Johnson</h3>
+                <p>Personal Training</p>
+                <span>7+ Years Experience</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+        
+
+
+        <section id="contact" class="contact">
+
+    <div class="section-title">
+        <p>GET STARTED</p>
+        <h2>MEMBERSHIP ENQUIRY</h2>
+    </div>
+
+    <form id="enquiryForm">
+
+        <input
+            type="text"
+            id="name"
+            placeholder="Full Name"
+            required
+        >
+
+        <input
+            type="tel"
+            id="phone"
+            placeholder="Phone Number"
+            required
+        >
+
+        <select id="plan" required>
+            <option value="">Select Membership Plan</option>
+            <option>Basic</option>
+            <option>Premium</option>
+            <option>Elite</option>
+        </select>
+
+        <select id="goal" required>
+            <option value="">Select Fitness Goal</option>
+            <option>Weight Loss</option>
+            <option>Muscle Gain</option>
+            <option>General Fitness</option>
+            <option>Other</option>
+        </select>
+
+        <select id="contactTime" required>
+            <option value="">Preferred Contact Time</option>
+            <option>Morning</option>
+            <option>Afternoon</option>
+            <option>Evening</option>
+        </select>
+
+        <textarea
+            id="message"
+            placeholder="Message / Questions"
+            rows="5"
+        ></textarea>
+
+        <button type="submit">
+            Send Enquiry
+        </button>
+
+    </form>
+
+</section>
+
+<!-- WhatsApp Button -->
+
+<a
+    href="https://wa.me/919999999999?text=Hi%20IronCore%20Fitness,%20I%20am%20interested%20in%20joining%20the%20gym.%20Can%20you%20send%20me%20the%20membership%20details?"
+    class="whatsapp-btn"
+    target="_blank"
+    aria-label="Contact IronCore Fitness on WhatsApp"
+>
+    <span>💬</span>
+    <strong>WhatsApp</strong>
+</a>
+
+<footer>
+
+        <h3>IRONCORE FITNESS</h3>
+
+        <p>
+            Build strength. Build confidence. Build yourself.
+        </p>
+
+        <p>
+            © 2026 IronCore Fitness. Demo Website.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
