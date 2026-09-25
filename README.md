@@ -1,6 +1,8 @@
-# IronCore Fitness
-
 A modern, responsive gym website designed for fitness centers and gyms.
+
+## 📸 Website Preview
+
+![IronCore Fitness Website](image.png)
 
 ## 🌐 Live Website
 
